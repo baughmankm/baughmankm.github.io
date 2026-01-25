@@ -156,6 +156,6 @@ nav a {
   opacity: 1;          /* appears on hover */
 }
 
-.p1 { background-image: url("images/pca_image.png"); }
+.p1 { background-image: url("pca_image.png"); }
 /* .p2 { background-image: url("images/data.jpg"); }
 .p3 { background-image: url("images/writing.jpg"); } */
