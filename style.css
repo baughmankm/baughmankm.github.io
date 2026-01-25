@@ -102,8 +102,8 @@ nav a {
   border-radius: 12px;
 
   background-color: #e8e8e8;
-  background-size: cover;       /* fills card */
-  background-position: center;  /* crops nicely */
+  background-size: cover; 
+  background-position: center;
   background-repeat: no-repeat;
 
   display: flex;
@@ -118,20 +118,20 @@ nav a {
   position: absolute;
   inset: 0;
 
-  background: rgba(0, 0, 0, 0);   /* invisible initially */
+  background: rgba(0, 0, 0, 0);
   transition: background 0.25s ease;
 }
 
 .project-card:hover::before {
-  background: rgba(0, 0, 0, 0.4);  /* dim on hover */
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .card-text {
-  position: relative;  /* ensures it sits above the overlay */
+  position: relative;
   z-index: 1;
 
   color: #ffffff;
-  opacity: 0;          /* hidden by default */
+  opacity: 0;
   transition: opacity 0.25s ease;
 
   text-align: center;
@@ -153,9 +153,7 @@ nav a {
 }
 
 .project-card:hover .card-text {
-  opacity: 1;          /* appears on hover */
+  opacity: 1;
 }
 
 .p1 { background-image: url("pca_image.png"); }
-/* .p2 { background-image: url("images/data.jpg"); }
-.p3 { background-image: url("images/writing.jpg"); } */
