@@ -1,6 +1,6 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Spectral Decomposition of Midwest Power Grid Load: Decoupling Thermal Dependence and Behavioral Rhythm"
+excerpt: "The thermal response of grid load is among the strongest and most predictable relationships in power systems. These relationships are strong enough that they mask the lower-amplitude behavioral structure beneath it. Here I use spectral decomposition of the post-fit residual to recover those hidden periodic behaviors. <br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
 
