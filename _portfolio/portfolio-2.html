@@ -3,24 +3,25 @@ title: "1D OAE Alkalinity Release and Sedimentation Model"
 excerpt: "Olivine Dissolution, Settling, and Sediment Alkalinity Release in a Stratified Water Column <br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
-Overview: 
-
 <div style="font-size: 0.9em" markdown="1">
-**Abbreviated Approach:** The mechanical propagation of this model is divided into two structures that control (1) the kinematics of undissolved olivine particles and (2) the bulk concentration flux of dissolved olivine across a 1D seawater column.
-Because the dynamics of both particles and dissolved material depend on parameters with strong temperature dependence, a fine-grained hyperbolic tangent temperature gradient grid is constructed across the water column.
-Using this grid, temperature-dependent parameters are calculated across the temperature gradient: seawater viscosity and the neutral and acidic pathway dissolution rate constants.
-Additionally, a prescribed eddy diffusivity profile is constructed across the column, largely matching the shape of the temperature gradient.
-This eddy diffusivity profile differs from the temperature gradient in that a Gaussian depression in log₁₀ K is applied, centered on the pycnocline.
-This is meant to replicate the suppression of eddy diffusion in this layer by the restoring forces arising from density differences.
-Particle positions are interpolated onto this grid at each dynamical update, and position-dependent parameters are used in their propagation.
-For the propagation of undissolved particles, molecular dynamics-style stochastic particle tracking is used to simulate Stokes settling of olivine particles, deposition in the bioturbated surface mixed layer, and burial.
-Under this module of the model, particles are subject to gravitational, drag, and buoyancy forces.
-In addition to this, stochastic turbulent diffusion perturbations are added to the update trajectories, with a drift-correction term to avoid spurious accumulation of particles in low-turbulence strata.
-Coupled with this is a chemical kinetics module that tracks how much material is dissolved over each particle update.
-Dissolved material is deposited in a 1D lattice spanning the water column that is mixed vertically by turbulent diffusion.
-This scheme was inspired by the Fourier's bar approach to heat dissipation, and uses a backward Euler approach to update material exchange between fine-grained cells across the column.
-Once an undissolved particle reaches the ocean floor, it "leaves" the water column and enters the bioturbated surface mixed layer.
-Here, the particles are subject to a separate set of dynamics: continued dissolution at porewater conditions and stochastic burial below the mixed layer, with a mean residence time set by the sediment accumulation rate.
-Material dissolved in the mixed layer is stored separately.
-Dissolved material from the mixed layer undergoes a one-way benthic flux into the lowest water-column cell during propagation, thereby capturing the dynamics of alkalinity release from the mixed layer.
+  Overview:
+
+  
+  Abbreviated Approach: The mechanical propagation of this model is divided into two structures that control (1) the kinematics of undissolved olivine particles and (2) the bulk concentration flux of dissolved olivine across a 1D seawater column.
+  Because the dynamics of both particles and dissolved material depend on parameters with strong temperature dependence, a fine-grained hyperbolic tangent temperature gradient grid is constructed across the water column.
+  Using this grid, temperature-dependent parameters are calculated across the temperature gradient: seawater viscosity and the neutral and acidic pathway dissolution rate constants.
+  Additionally, a prescribed eddy diffusivity profile is constructed across the column, largely matching the shape of the temperature gradient.
+  This eddy diffusivity profile differs from the temperature gradient in that a Gaussian depression in log₁₀ K is applied, centered on the pycnocline.
+  This is meant to replicate the suppression of eddy diffusion in this layer by the restoring forces arising from density differences.
+  Particle positions are interpolated onto this grid at each dynamical update, and position-dependent parameters are used in their propagation.
+  For the propagation of undissolved particles, molecular dynamics-style stochastic particle tracking is used to simulate Stokes settling of olivine particles, deposition in the bioturbated surface mixed layer, and burial.
+  Under this module of the model, particles are subject to gravitational, drag, and buoyancy forces.
+  In addition to this, stochastic turbulent diffusion perturbations are added to the update trajectories, with a drift-correction term to avoid spurious accumulation of particles in low-turbulence strata.
+  Coupled with this is a chemical kinetics module that tracks how much material is dissolved over each particle update.
+  Dissolved material is deposited in a 1D lattice spanning the water column that is mixed vertically by turbulent diffusion.
+  This scheme was inspired by the Fourier's bar approach to heat dissipation, and uses a backward Euler approach to update material exchange between fine-grained cells across the column.
+  Once an undissolved particle reaches the ocean floor, it "leaves" the water column and enters the bioturbated surface mixed layer.
+  Here, the particles are subject to a separate set of dynamics: continued dissolution at porewater conditions and stochastic burial below the mixed layer, with a mean residence time set by the sediment accumulation rate.
+  Material dissolved in the mixed layer is stored separately.
+  Dissolved material from the mixed layer undergoes a one-way benthic flux into the lowest water-column cell during propagation, thereby capturing the dynamics of alkalinity release from the mixed layer.
 </div>
