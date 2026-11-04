@@ -1,7 +1,18 @@
 ---
-title: "Portfolio item number 2"
-excerpt: "Short description of portfolio item number 2 <br/><img src='/images/500x300.png'>"
+title: "1D OAE Alkalinity Release and Sedimentation Model"
+excerpt: "Olivine Dissolution, Settling, and Sediment Alkalinity Release in a Stratified Water Column <br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
+Overview: 
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+Abbreviated Method: The mechanical propogation of this model is divided into two structures that control (1) the kinematics of undissolved olivine particles and (2) bulk concentration flux of dissolved olivine across 1D seawater column. 
+For the undissolved particles, molecular dynamics-style stochastic particle tracking is used simulate Stokes settling of olivine particles, trapping in the bioturbated surface mized layer, and burial.
+Under this module of the model, paritcles are subject to graviation, drag, and buoyant forces standard to water-based kinematics.
+Coupling with this is a chemical kinetics module which track how much material is dissolved over each particle update.
+Dissolved material is deposited in 1D lattice spanning the water column that equilibrates the diffusive flux of the dissolved olivine.
+This chemical equilibration was inspired by the Fourier's bar approach to heat dissipation.
+For each particle update, 
+In order to make these, simulations more system-relevant a fine-grained hyperbolic tangential temperature gradient is constructed across the water column.
+The following temperature-dependent parameters in the update equations are calculated across the temperature gradient: seawater viscosity, the neutral and acidic pathway dissolution rate constants, and the eddy diffusivity constant.
+Particle and dissolved-material cell positions are interpolated into this grid upon each update and a position-temperature dependent parameters are used in their propogation.
+
