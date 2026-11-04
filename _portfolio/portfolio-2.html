@@ -5,14 +5,16 @@ collection: portfolio
 ---
 Overview: 
 
-Abbreviated Method: The mechanical propogation of this model is divided into two structures that control (1) the kinematics of undissolved olivine particles and (2) bulk concentration flux of dissolved olivine across 1D seawater column. 
-For the undissolved particles, molecular dynamics-style stochastic particle tracking is used simulate Stokes settling of olivine particles, trapping in the bioturbated surface mized layer, and burial.
+Abbreviated Approach: The mechanical propogation of this model is divided into two structures that control (1) the kinematics of undissolved olivine particles and (2) bulk concentration flux of dissolved olivine across 1D seawater column. 
+Because the dynamics of both particles and dissolved material are dependent on parameters with strong temperature dependence, a fine-grained hyperbolic tangential temperature gradient grid is constructed across the water column.
+Using this grid, temperature-dependent parameters are calculated across the temperature gradient grid: seawater viscosity, the neutral and acidic pathway dissolution rate constants, and the eddy diffusivity constant.
+Particle and dissolved-material cell positions are interpolated into this grid upon each dynamical update and a position-encoded temperature-dependent parameters are used in their propogation.
+For the propogation of undissolved particles, molecular dynamics-style stochastic particle tracking is used simulate Stokes settling of olivine particles, trapping in the bioturbated surface mixed layer, and burial.
 Under this module of the model, paritcles are subject to graviation, drag, and buoyant forces standard to water-based kinematics.
 Coupling with this is a chemical kinetics module which track how much material is dissolved over each particle update.
 Dissolved material is deposited in 1D lattice spanning the water column that equilibrates the diffusive flux of the dissolved olivine.
-This chemical equilibration was inspired by the Fourier's bar approach to heat dissipation.
-For each particle update, 
-In order to make these, simulations more system-relevant a fine-grained hyperbolic tangential temperature gradient is constructed across the water column.
-The following temperature-dependent parameters in the update equations are calculated across the temperature gradient: seawater viscosity, the neutral and acidic pathway dissolution rate constants, and the eddy diffusivity constant.
-Particle and dissolved-material cell positions are interpolated into this grid upon each update and a position-temperature dependent parameters are used in their propogation.
-
+This chemical equilibration was inspired by the Fourier's bar approach to heat dissipation, and utilized a backward Euler-approach to update material exchange between fine-grain cells across the column.
+Once an undissolved particle reaches the ocean floor, it "leaves" the water column and enters the bioturbated surface mixed layer. 
+Here, the particles are subject to a separate set of dynamics -- continued dissolvation and burial.
+Material that is dissolved in the mixed layer is stored in an additional sub-water-column cell in the dissolved material grid.
+Dissolved material in this cell undergoes benthic flux into the lowest watercolumn cells during propogation, thereby capturing the dynamics of alkalinity release from the mixed layer.
