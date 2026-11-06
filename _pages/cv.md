@@ -18,6 +18,11 @@ Skills
 * **Tools:** Python ([NumPy, SciPy, pandas, matplotlib]), MATLAB, Schrödinger, [Git, Jupyter, Linux/HPC]
 * **Experimental:** solid-state NMR spectroscopy; experimental design and data collection on complex instrumentation
 
+Independent projects
+======
+* **1D Ocean Alkalinity Enhancement Particle Model** ([details](/portfolio/oae-model/)): particle model of mineral settling, dissolution, and burial for ocean carbon removal
+* **Spectral Decomposition of Midwest Power Grid Load** ([details](/portfolio/portfolio-1/)): separated thermal load response from behavioral periodic structure using FFT, spectral masking, and harmonic regression
+
 Experience
 ======
 * **Graduate Researcher**, McDermott Lab, Columbia University, 2021–present
@@ -31,11 +36,6 @@ Experience
 
 * **Undergraduate Researcher**, Keane Lab, University of Michigan, 2017–2020
   * Studied long noncoding RNA structure using solution NMR
-
-Independent projects
-======
-* **1D Ocean Alkalinity Enhancement Particle Model** ([details](/portfolio/oae-model/)): particle model of mineral settling, dissolution, and burial for ocean carbon removal
-* **Spectral Decomposition of Midwest Power Grid Load** ([details](/portfolio/portfolio-1/)): separated thermal load response from behavioral periodic structure using FFT, spectral masking, and harmonic regression
 
 Education
 ======
