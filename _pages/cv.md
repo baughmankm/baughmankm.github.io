@@ -20,17 +20,17 @@ Skills
 
 Experience
 ======
-* **Graduate Researcher**, McDermott Lab, Columbia University, [20XX]–present
-  * [One line: KcsA membrane protein dynamics: what you measured or modeled, and what it showed]
-  * [One line: SMN C-terminus characterization: methods and result]
-  * Wrote stochastic (Gillespie) and molecular-dynamics simulations of protein conformational dynamics, and fit physical models to noisy spectral data
-  * Mentored four undergraduate researchers
+* **Graduate Researcher**, McDermott Lab, Columbia University, 2021–present
+  * Leveraged solid-state sNMR to investigate the local structures and dynamics of a difficult-to-study protein involved in disease and fundamental biology.
+  * Modeled the effects of rotational diffusion of a potassium-ion channel in a lipids membrane in order to develop methods to (1) detect this motion in sample and (2) decouple it from the effects of functionally relevant motions.
+  * Wrote stochastic (Gillespie) and molecular-dynamics simulations of protein conformational dynamics, and fit physical models to noisy spectral data.
+  * Mentored four undergraduate researchers.
 
 * **Teaching Assistant and Computational Lab Lead**, Biophysical Chemistry II (CHEM 4324), Columbia University, Spring 2022 and Spring 2023
-  * Led the course's Python-based computational lab section; revised labs and homework, wrote answer keys, and did all grading
+  * Led the course's Python-based computational lab section; revised labs and homework, wrote answer keys, and did all grading.
 
-* **Undergraduate Researcher**, Keane Lab, University of Michigan, [20XX]–2020
-  * Studied long noncoding RNA structure by solution NMR
+* **Undergraduate Researcher**, Keane Lab, University of Michigan, 2017–2020
+  * Studied long noncoding RNA structure using solution NMR
 
 Independent projects
 ======
