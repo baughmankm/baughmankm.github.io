@@ -23,7 +23,7 @@ repository               : "baughmankm/baughmankm.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "bio-photo.png"
   name             : "Kirk Baughman"
   pronouns         : # example: "he/him" 
   bio              : "Computational Biophysicist<br><i>Simulation and Quantitative Analysis of Physical Systems</i>"
