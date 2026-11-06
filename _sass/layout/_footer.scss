@@ -103,3 +103,16 @@
     }
   }
 }
+
+.page__footer-compact {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  font-size: $type-size-7;
+}
+
+/* keep the last bit of page content from hiding behind the pinned footer */
+@media screen and (min-width: 769px) {
+  body { padding-bottom: 3em; }
+}
